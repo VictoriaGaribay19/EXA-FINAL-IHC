@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content ="Lizbeth Garibay Ayma">
+    <meta name="description" content="Landing Page">
+    <meta name="keyword" content="Costumbres, Tradiciones, Pueblos Indígenas, Mobile Apps, StartUp">
+    <meta name="viewport" content="width=device-width, initial-scalable=1.0">
+
+    <title>Culture.Quest</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- SE AGREGA BOOSTRAP -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- SE AGREGA EL CSS -->
+    <link rel="stylesheet"  href="css/styles.css">
+    <!-- SE AGREGA LINKS DE LOS ÍCONOS -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <link href=https://fonts.googleapis.com/icon?family=Material+Icons rel="stylesheet">
+
+
+
+</head>
+<body>
+    <header>
+        <!-- HEADER QUE SERÁ EL MENÚ PRINCIPAL CON LAS DIVERSAS OPCIONES -->
+        <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src=""
+                         alt="CULTURE.QUEST"
+                         width="60" height="60"
+                         class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- SE ESTABLECE A DONDE SE DIRIGÁ CADA OPCIÓN-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">CULTURE.QUEST</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#options">Oferta de Valor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#register">Registro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id=cover class="cover">
+            <div class="container_cover">
+                <div class="container_info">
+                    <!-- SECCIÓN QUE CONTIENE, LO QUE SERÍA LA PORTADA -->
+                    <h1> CULTURE </h1> <br>
+                    <h2> .QUEST </h2>
+                    <p> “Los pueblos indígenas tienen el derecho colectivo e individual a mantener y desarrollar sus
+                        propias características e identidades comprendiendo el derecho a identificarse a sí mismos
+                        como indígenas y ser reconocidos como tales”</p>
+                </div>
+                <!-- SE ESTABLECE LA IMAGEN QUE ACOMPAÑARÁ LA DESCRIPCIÓN -->
+                <div class="cover-img">
+                    <img src="img/inicioniños.jpeg" alt="Niños Afroperuanos" class ="vector-img">
+                </div>
+            </div>
+        </section>
+
+        <section id=options class="options">
+            <!-- SECCIÓN QUE SE ESTABLECE EL CARD -->
+            <div class="body_Page">
+                <div class="container_article">
+                    <h2 class="sub tittle"> OFERTA DE VALOR</h2>
+                    <div class="container_body">
+                        <div class="card">
+                            <img src="img/card.1.jpg"alt="Mujer bordando según tradición de su pueblo">
+                            <h4> Culture-911.org</h4>
+                            <p> Un sitio web para que el usuario debidamente registrado pueda colocar
+                                las costumbres, tradiciones y otros elementos de su identidad cultural para responder las
+                                diversas preguntas</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/card.2.jpg" alt="Representación de una leyenda">
+                            <h4>Your Culture App:</h4>
+                            <p> Una aplicación móvil que permita registrar en una base de datos, las
+                                tradiciones, leyendas, costumbres que una persona escucha o le informan cuando hace
+                                turismo por una zona, asimismo debe permitir registrar en google maps el punto donde
+                                encontró dicha valiosa información.</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/card.3.jpg "alt="Familia haciedo turismo">
+                            <h4>Tourism Partner App</h4>
+                            <p> Una aplicación móvil dirigida a los operadores turísticos para que
+                                puedan ofertar paquetes turísticos que respeten y refuercen la identidad cultural, tales
+                                como viajes organizados para visitar museos de sitio o parques arqueológicos,
+                                gastronómico: vinculado a la comida tradicional del destino turístico, enológico:
+                                vinculado a los vinos de una zona (también llamado Turismo del vino), ecoturismo, etc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=register class="register">
+            <!-- SECCIÓN QUE SE SERÁ EL REGISTRO PARA LOS USUARIOS -->
+            <h1 style="padding-top: 90px">REGISTRO</h1>
+            <form class="row g-3 needs-validation" novalidate>
+                <!-- PARA COMPLETAR NOMBRES -->
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombres Completos</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Escribir aquí" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <!-- PARA COMPLETAR APELLIDOS -->
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellidos Completos</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Escribir aquí" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <!-- PARA COMPLETAR CORREO ELÉCTRONICO-->
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Correo electrónico</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+                <!-- PARA COMPLETAR LA CIUDAD-->
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <!-- PARA COMPLETAR EL PAÍS-->
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">País</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <!-- PARA COMPLETAR LAS PREGUNTAS DADAS-->
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">¿Por qué es importante trabajar la identidad cultural de cada pueblo?</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">¿Cómo
+                        reforzar la identidad cultural en el pueblo?</label>
+                    <input type="text" class="form-control" id="validationCustom06" required>
+                    <div class="invalid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label"> ¿Se reconoce la Identidad cultural en el sistema educativo de su comunidad?</label>
+                    <input type="text" class="form-control" id="validationCustom07" required>
+                    <div class="invalid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">¿¿Hay alguna construcción en su comunidad que debería ser considera un patrimonio
+                        cultural?.</label>
+                    <input type="text" class="form-control" id="validationCustom08" required>
+                    <div class="invalid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+
+        </section>
+        <!-- PARA LA IMAGEN QUE ACOMPAÑARÁ A LAS DESCARGAS-->
+        <div class="container-fluid position-relative my-5 text-center">
+            <img class="img-fluid" src="img/final.1.jpg" style="opacity: 80%" alt="Cover">
+        </div>
+        <!-- SECCIÓN QUE SERÁ PARA LA IMAGEN DE DESCRGAS DE ANDROID Y IOS-->
+        <div class="dowland">
+            <img src="img/googleplay.png">
+            <img src="img/appstore.JPG">
+        </div>
+    </main>
+
+    <footer>
+        <!-- SECCIÓN EN DONDE SE ESTABLECE LOS LINKS E ICONOS DE LAS REDES SOCIALES-->
+        <div class="footer-link">
+            <div class="footer-link">
+                <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                    <span class="iconify" data-icon="akar-icons:facebook-fill"></span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                    <span class="iconify" data-icon="ant-design:instagram-filled"></span>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+                    <span class="iconify" data-icon="brandico:linkedin-rect"></span>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" title="Youtube">
+                    <span class="iconify" data-icon="bi:youtube"></span>
+                </a>
+            </div>
+
+        </div>
+        <p>Todos los derechos reservados © 2021<br><b> Culture.Quest</b> </p>
+    </footer>
+
+    <!-- BOOSTRAP-->
+    <script crossorigin="anonymous"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
